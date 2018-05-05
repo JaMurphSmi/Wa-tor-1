@@ -4,16 +4,16 @@
 #See http://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/ for info.
 
 CC=g++
-CFLAGS= -std=c++11 -pthread
+CFLAGS= -std=c++11 -pthread -pg
 HFILES= Animal.h
-CFILES= Animal.cpp wa-tor.cpp
+CPPFILES= Animal.cpp wa-tor.cpp
 
 #This rule says that each .o file depends on a .cpp file of the same name
 %.o: %.cpp
 	$(CC) -c -o $@ $< $(CFLAGS) $(DEBUGFLAGS)
 
-ALL: $(HFILES) $(CFILES)
-	$(CC) -o main $(CFLAGS) $(CFILES) $(DEBUGFLAGS)
+ALL: $(HFILES) $(CPPFILES)
+	$(CC) -o DangerZone $(CFLAGS) $(CPPFILES) $(DEBUGFLAGS)
 
 DEBUG: DEBUGFLAGS = -DDEBUG
 DEBUG: ALL
