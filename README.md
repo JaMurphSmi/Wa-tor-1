@@ -43,7 +43,7 @@ Makefile
 > - Ram : 3541MB
 > - Processor : Intel(R) Core(TN) i7-4700HQ CPU @ 2.40GHz
 > - OS : Ubuntu
-> - Cores : 1, 2, 3
+> - Cores : 3
 
 (35 x 60) Size of World
 
@@ -60,7 +60,9 @@ Makefile
 
 (35 x 60) Size of World
 
+![alt text](https://github.com/phelantomas/Wa-tor/blob/master/Barchart3.png)
 
 (18 x 30) Size of World
 
+![alt text](https://github.com/phelantomas/Wa-tor/blob/master/Barchart4.png)
 
